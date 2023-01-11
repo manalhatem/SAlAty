@@ -22,7 +22,7 @@ class CustomBtn extends StatelessWidget {
         padding: EdgeInsets.all(height(context)*.026),
         decoration: BoxDecoration(
           color: col,
-          borderRadius: BorderRadius.circular(25),
+          borderRadius: BorderRadius.circular(28),
         ),
         child: Center(child: CustomText(
           fontWeight: weight,

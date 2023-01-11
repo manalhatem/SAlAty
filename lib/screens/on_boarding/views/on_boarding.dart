@@ -75,9 +75,9 @@ class _OnBoardingViewState extends State<OnBoardingView> {
                 padding:  EdgeInsets.symmetric(vertical: height(context)*.04,horizontal:height(context)*.055 ),
                 child:
                 currentIndex==itemsBoard.length -1?
-                CustomBtn(text: 'Start',ontap: (){
+                CustomBtn(text: 'START',ontap: (){
                   Navigator.pushReplacementNamed(context, AppRoutes.welcome);
-                },col: AppColor.mainColor,) :
+                },col: AppColor.mainColor, weight: FontWeight.w500,size: 19) :
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [

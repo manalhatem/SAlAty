@@ -38,6 +38,11 @@ dependencies:
   cupertino_icons: ^1.0.2
   simple_animations: ^4.1.0
   introduction_screen: ^3.1.2
+  flutter_bloc: ^8.1.1
+  bloc: ^8.1.0
+  dio: ^4.0.6
+  fluttertoast: ^8.0.9
+  shared_preferences: ^2.0.15
 
 dev_dependencies:
   flutter_test:

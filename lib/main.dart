@@ -1,9 +1,13 @@
+import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:salaty/utilities/router.dart';
 import 'package:salaty/utilities/routes.dart';
-import 'screens/splash.dart';
+import 'bloc_observer.dart';
 
-void main() {
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  Bloc.observer = MyBlocObserver();
+
   runApp(const MyApp());
 }
 
