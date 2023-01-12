@@ -3,9 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:salaty/utilities/router.dart';
 import 'package:salaty/utilities/routes.dart';
 import 'bloc_observer.dart';
+import 'core/local/cach_helper.dart';
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
+  await CacheHelper.init();
   Bloc.observer = MyBlocObserver();
 
   runApp(const MyApp());
